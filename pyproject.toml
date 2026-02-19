@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "logsnap"
-version = "1.1.0"
+version = "1.1.1"
 description = "CLI tool to analyze log files (ERROR/WARNING) with context and report export"
 requires-python = ">=3.12"
 readme = "README.md"

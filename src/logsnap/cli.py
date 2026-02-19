@@ -4,11 +4,18 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser(
         prog="logsnap",
-        description="LogSnap — Logfile Analyzer CLI Tool"
+        description="LogSnap — Logfile Analyzer CLI Tool",
+        formatter_class=argparse.RawTextHelpFormatter,
+        epilog=(
+            "Beispiele:\n"
+            "  logsnap sample/sample.log\n"
+            "  logsnap sample/sample.log --only error\n"
+            "  logsnap sample/sample.log --only warning --context 2\n"
+            "  logsnap sample/sample.log --out reports/report.txt\n"
+        )
     )
 
     parser.add_argument("logfile", help="Pfad zur Logdatei")
-
     parser.add_argument("--out", help="Speicherpfad für Report")
 
     parser.add_argument(
@@ -91,7 +98,7 @@ def main():
         selected = warnings
     else:
         selected_label = "ALL"
-        selected = errors + warnings
+        selected = sorted(errors + warnings, key=lambda t: t[0])  # v1.1.1: Log-Reihenfolge
 
     ctx = args.context or 0
 
