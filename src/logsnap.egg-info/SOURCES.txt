@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/logsnap/__init__.py
+src/logsnap/__main__.py
+src/logsnap/cli.py
+src/logsnap.egg-info/PKG-INFO
+src/logsnap.egg-info/SOURCES.txt
+src/logsnap.egg-info/dependency_links.txt
+src/logsnap.egg-info/entry_points.txt
+src/logsnap.egg-info/top_level.txt

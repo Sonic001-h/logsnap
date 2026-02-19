@@ -1,0 +1,7 @@
+2026-02-19 10:00:01 INFO  App started
+2026-02-19 10:00:02 WARNING Disk space low
+2026-02-19 10:00:03 ERROR Failed to connect to database
+2026-02-19 10:00:04 INFO  Retrying connection
+2026-02-19 10:00:05 ERROR Timeout while connecting
+2026-02-19 10:00:06 WARNING Deprecated config option used
+2026-02-19 10:00:07 INFO  App shutdown
