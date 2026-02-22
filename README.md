@@ -1,28 +1,28 @@
 # LogSnap
 
-CLI-Tool zum Analysieren von Logdateien (ERROR/WARNING), inklusive Kontextanzeige und Report-Export.
+Lightweight CLI tool for quickly analyzing log files and detecting ERROR/WARNING entries with context and optional report export.
 
 ---
 
-## Features
+## ✨ Features
 
-* erkennt **ERROR** und **WARNING**
-* zählt Treffer
-* filtert nach Typ
-* zeigt Kontextzeilen
-* kann Reports speichern
-
----
-
-## Voraussetzungen
-
-* Python **3.12+**
+- detects **ERROR** and **WARNING**
+- counts matches
+- filter by type
+- shows surrounding context lines
+- export structured reports
 
 ---
 
-## Installation (lokal)
+## 🧰 Requirements
 
-Im Projektordner mit aktivierter virtueller Umgebung:
+- Python **3.12+**
+
+---
+
+## 📦 Installation
+
+Inside project directory with active virtual environment:
 
 ```bash
 python -m pip install -e .
@@ -30,21 +30,21 @@ python -m pip install -e .
 
 ---
 
-## Nutzung
+## 🚀 Usage
 
-Empfohlen:
-
-```bash
-logsnap <logfile> [optionen]
-```
-
-Alternative (ohne Script-Entry):
+Recommended:
 
 ```bash
-python -m logsnap <logfile> [optionen]
+logsnap <logfile> [options]
 ```
 
-Beispiel:
+Alternative:
+
+```bash
+python -m logsnap <logfile> [options]
+```
+
+Example:
 
 ```bash
 logsnap sample/sample.log --only error --context 2
@@ -52,32 +52,32 @@ logsnap sample/sample.log --only error --context 2
 
 ---
 
-## Optionen
+## ⚙️ Options
 
-| Option           | Beschreibung              |
-| ---------------- | ------------------------- |
-| `--only error`   | nur Errors anzeigen       |
-| `--only warning` | nur Warnings anzeigen     |
-| `--context N`    | N Zeilen Kontext anzeigen |
-| `--out DATEI`    | Report speichern          |
+| Option | Description |
+|------|-------------|
+| `--only error` | show only errors |
+| `--only warning` | show only warnings |
+| `--context N` | show N lines of context |
+| `--out FILE` | save report |
 
 ---
 
-## Beispiele
+## 📘 Examples
 
-### Nur Errors
+**Only errors**
 
 ```bash
 logsnap sample/sample.log --only error
 ```
 
-### Warnings mit Kontext
+**Warnings with context**
 
 ```bash
 logsnap sample/sample.log --only warning --context 3
 ```
 
-### Report speichern
+**Save report**
 
 ```bash
 logsnap sample/sample.log --out reports/report.txt
@@ -85,43 +85,49 @@ logsnap sample/sample.log --out reports/report.txt
 
 ---
 
-## Beispieloutput
+## 📄 Example Output
 
 ```
 LogSnap Report
 =============
-Datei: sample/sample.log
-Zeilen insgesamt: 7
+File: sample/sample.log
+Total lines: 7
 Errors: 2
 Warnings: 2
-Ausgabe-Modus: ERROR
+Mode: ERROR
 
-Treffer:
+Matches:
 3: ERROR Failed to connect
 5: ERROR Timeout
 ```
 
 ---
 
-## Häufige Probleme
+## ❗ Common Issues
 
-**Datei nicht gefunden**
-→ Pfad prüfen oder Working Directory korrekt setzen
+**File not found**  
+→ check path or working directory
 
-**Keine Treffer**
-→ Datei enthält keine ERROR/WARNING-Zeilen
-
----
-
-## Projektstatus
-
-Version: **v1.1 stabil**
+**No matches**  
+→ file contains no ERROR/WARNING lines
 
 ---
 
-## Roadmap (geplant)
+## 📊 Project Status
 
-* Regex-Filter
-* JSON-Report
-* farbige CLI-Ausgabe
-* Performance-Optimierung für große Logs
+**Version:** v1.1 — stable
+
+---
+
+## 🛣 Roadmap
+
+- Regex filters
+- JSON reports
+- colored CLI output
+- performance improvements for large logs
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please read `CONTRIBUTING.md` before submitting a PR.

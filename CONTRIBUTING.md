@@ -1,45 +1,73 @@
 # Contributing to LogSnap
 
-Thanks for your interest in contributing! 🎉
+Thanks for your interest in contributing 🎉
 
-## Setup (local)
+---
+
+## 🧪 Local Setup
+
 ```bash
 git clone https://github.com/Sonic001-h/logsnap.git
 cd logsnap
 python -m venv .venv
-# Windows:
+```
+
+Activate environment:
+
+**Windows**
+```bash
 .\.venv\Scripts\activate
+```
+
+**Linux / macOS**
+```bash
+source .venv/bin/activate
+```
+
+Install project:
+
+```bash
 python -m pip install -e .
-Run
+```
+
+Run test:
+
+```bash
 logsnap sample/sample.log
-Development notes
-Keep changes small and focused.
-
-Prefer stability over new features.
-
-Follow existing code style and naming.
-
-Submitting changes
-Create a branch:
-
-git checkout -b feature/my-change
-Commit with a clear message.
-
-Open a Pull Request and describe:
-
-what you changed
-
-why you changed it
-
-how to test it
-
-Reporting issues
-Please use the Issue templates:
-
-Bug report
-
-Feature request
-
+```
 
 ---
 
+## 📏 Development Guidelines
+
+- keep changes small and focused
+- prefer stability over new features
+- follow existing naming & structure
+
+---
+
+## 🔀 Submitting Changes
+
+1. Create branch  
+   ```bash
+   git checkout -b feature/my-change
+   ```
+
+2. Commit clearly  
+   ```
+   add context validation for negative values
+   ```
+
+3. Open Pull Request including:
+   - what changed
+   - why it changed
+   - how to test
+
+---
+
+## 🐞 Reporting Issues
+
+Please use issue templates:
+
+- Bug report
+- Feature request
