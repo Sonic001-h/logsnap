@@ -2,6 +2,8 @@
 
 Lightweight CLI tool for quickly analyzing log files and detecting ERROR/WARNING entries with context and optional report export.
 
+⭐ Star this repo if LogSnap helps you
+
 ---
 
 ## ✨ Features
