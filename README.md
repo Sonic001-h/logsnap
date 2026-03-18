@@ -1,5 +1,7 @@
 # LogSnap
 
+![GitHub stars](https://img.shields.io/github/stars/Sonic001-h/logsnap?style=social)
+
 Understand what actually happened across multiple services - without guessing.
 
 When debugging issues across multiple services, the hardest part is often not fixing the bug - it's reconstructing the timeline.
@@ -31,7 +33,7 @@ LogSnap focuses on understanding them.
 
 Instead of scanning endless log lines, you get closer to the actual sequence of events.
 
-It doesn't replace your logging stack — it helps you understand it.
+It doesn't replace your logging stack - it helps you understand it.
 
 ---
 
@@ -48,6 +50,11 @@ Inside project directory with active virtual environment:
 ```bash
 python -m pip install -e .
 ```
+
+## ⚡ Try it in 10 seconds
+
+```bash
+logsnap sample/sample.log --only error --context 2
 
 ---
 
@@ -136,7 +143,7 @@ Matches:
 
 ## 📊 Project Status
 
-**Version:** v1.1 — stable
+**Version:** v1.1 - stable
 
 ---
 
