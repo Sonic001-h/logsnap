@@ -1,18 +1,37 @@
 # LogSnap
 
-Lightweight CLI tool for quickly analyzing log files and detecting ERROR/WARNING entries with context and optional report export.
+Understand what actually happened across multiple services - without guessing.
+
+When debugging issues across multiple services, the hardest part is often not fixing the bug - it's reconstructing the timeline.
+
+Logs are scattered.
+Events are out of order.
+And you end up jumping between files, trying to piece everything together.
+
+LogSnap helps you turn raw logs into something you can actually understand.
 
 ⭐ Star this repo if LogSnap helps you
 
 ---
 
-## ✨ Features
+## ✨ What LogSnap helps you do
 
-- detects **ERROR** and **WARNING**
-- counts matches
-- filter by type
-- shows surrounding context lines
-- export structured reports
+- find errors and warnings quickly
+- see events with surrounding context
+- reduce noise in large log files
+- get a clearer picture of what happened
+
+---
+
+## 🧠 Why LogSnap
+
+Most tools help you store or search logs.
+
+LogSnap focuses on understanding them.
+
+Instead of scanning endless log lines, you get closer to the actual sequence of events.
+
+It doesn't replace your logging stack — it helps you understand it.
 
 ---
 
